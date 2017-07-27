@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+        function account()
+        {
+            var a=0;
+            var b=0;
+            var total=0;
+            a = document.getElementsById("number1").value;
+            b = document.getElementsById("price1").value;
+            
+            return parseInt(a)*parseInt(b);
+            
+          
+            
+        }
+        function ShowReturn(){
+					document.getElementById("total").innerHTML=account();
+				}
+        
+</script>
+<input id="price1" type="text" value=5>
+<input id="number1" type="text" value=6>
+<input id="total" type="text" >
+<a herf="javascript:ShowReturn">12</a>
+</body>
+</html>
